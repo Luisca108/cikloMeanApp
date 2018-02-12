@@ -1,0 +1,38 @@
+<div *ngIf="vehicle" class="details">
+    <h2>Datos: {{vehicle.nombre}}</h2>
+    <table>
+   	 <tr>
+   		 <td><label>ID: </label></td>
+   		 <td>{{vehicle.id}}</td>
+   	 </tr>
+   	 <tr>
+   		 <td><label>Nombre: </label></td>
+   		 <td><input [(ngModel)]="vehicle.nombre" placeholder="nombre" /></td>
+   	 </tr>
+   	 <tr>
+   		 <td><label>Ruta: </label></td>
+   		 <td><input [(ngModel)]="vehicle.ruta" placeholder="ruta" /></td>
+   	 </tr>
+   	 <tr>
+   		 <td><label>Producto: </label></td>
+   		 <td><input [(ngModel)]="vehicle.producto" placeholder="producto" /></td>
+	 </tr>
+	<tr>
+		<td>
+			<label>Cliente: </label>
+		</td>
+		<td>
+			<input [(ngModel)]="vehicle.cliente" placeholder="cliente" />
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<label>Estatus: </label>
+		</td>
+		<td>
+			<input [(ngModel)]="vehicle.estatus" placeholder="estatus" />
+		</td>
+	</tr>
+		
+    </table>
+</div>
